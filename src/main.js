@@ -7,6 +7,7 @@ $(document).ready(function() {
   $('#weatherLocation').click(function() {
     let city = $('#location').val();
     $('#location').val("");
+    
     $.ajax({
       url: `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=1861cc67ea05415c7504995dbe83ff40`,
       type: 'GET',
